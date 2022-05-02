@@ -7,9 +7,11 @@ p {
     text-shadow: 2px 2px green;
 }
 ol {
+    color: aqua;
     list-style-type: upper-roman;
 }
 
 ul {
+    color: blueviolet;
     list-style-type: square;
 }

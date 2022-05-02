@@ -1,8 +1,10 @@
 
 ol {
+    color: aqua;
     list-style-type: upper-roman;
 }
 
 ul {
+    color: blueviolet;
     list-style-type: square;
 }
