@@ -1,9 +1,19 @@
+body{
+
+}
+
+h1 {
+    text-align: center;
+}
+
 #gallery {
+    justify-self: center;
     background-color: blueviolet;
     
 }
 
 .container {
+    position: relative;
     background-color: aqua;
 }
 
@@ -25,6 +35,10 @@
 }
 
 .photo-overlay {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
     background-color: orange;
 }
 
