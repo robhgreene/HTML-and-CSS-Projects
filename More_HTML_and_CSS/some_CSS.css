@@ -1,0 +1,101 @@
+body {
+    background-color: #fff;
+}
+
+h1 {
+    color: rgba(8,141,165,1);
+    margin-left: 100px;
+    text-shadow: 1px .5px 4px rgba(0, 0, 0,0.6);
+}
+
+.container {
+    width: 450px;
+    height: 450px;
+    background-color: #faebd7;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+/*selects all the square classes in the container class*/
+.container .squares:nth-child(-n+4) {
+    background-image: url("../Space_station/images/favicon_Rob1.png");
+    color: #fff;
+    float: left; /*Will have all the elements in-line to the left*/
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 25%;
+    cursor: pointer; /*changes the cursor to a pointer when hovered over*/
+    transition: transform .5s ease-in-out;/*more properties for the hover effect*/   
+}
+
+/*selects all the square's paragraphs in the array*/
+/*only select the first p for each square*/
+.squares:nth-child(-n+4) p:nth-child(-n+1) {
+    font-family:Arial, Helvetica, sans-serif;
+    font: 1.5em;
+    font-weight: 200;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/*Individually select a square in the array*/
+.squares:nth-child(1) {
+    background-color: red;
+}
+
+.squares:nth-child(2) {
+    background-color: blue;
+}
+
+.squares:nth-child(3) {
+    background-color: green;
+}
+
+.squares:nth-child(4) {
+    background-color: orange;
+}
+
+/*Adding hover effects*/
+.container .squares:nth-child(-n+4):hover {
+    background-image: url("../Space_station/images/favicon_Rob2.png");
+    transform: scale(.5);
+    /*this is where we call the animation*/
+    animation-name: race; /*at certain times, the object is going to to something*/
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite; /*this animation will repeat as long as the cursor is hovering*/
+    animation-timing-function: cubic-bezier(2.5,.2,.3,2);
+}
+
+.squares:nth-child(1):hover {
+    background: rgb(0, 213, 255);
+}
+
+.squares:nth-child(2):hover {
+    background-color: rgb(255, 0, 170);
+}
+
+.squares:nth-child(3):hover {
+    background-color: rgb(221, 175, 89);
+}
+
+.squares:nth-child(4):hover {
+    background-color: rgb(21, 241, 21);
+}
+
+/*this is how you do an animation effect in CSS*/
+/*this is where we define the animation*/
+@keyframes race {
+    /*when it starts, the animation is at 0 and goes to 100*/
+    /*this is what will happen over the course of the animation*/
+    0%, 100% { 
+        transform: translateY(0px);
+        background-image: url("../Space_station/images/favicon_Rob2.png");
+    }
+    /*half-way through the animation, do this*/
+    50% {
+        transform: translateY(330px);
+    }
+}
