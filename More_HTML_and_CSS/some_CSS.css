@@ -18,7 +18,7 @@ h1 {
 
 /*selects all the square classes in the container class*/
 .container .squares:nth-child(-n+4) {
-    background-image: url("../Space_station/images/favicon_Rob1.png");
+    background-image: url("./images/favicon_Rob1.png");
     color: #fff;
     float: left; /*Will have all the elements in-line to the left*/
     width: 100px;
@@ -60,7 +60,7 @@ h1 {
 
 /*Adding hover effects*/
 .container .squares:nth-child(-n+4):hover {
-    background-image: url("../Space_station/images/favicon_Rob2.png");
+    background-image: url("./images/favicon_Rob2.png");
     transform: scale(.5);
     /*this is where we call the animation*/
     animation-name: race; /*at certain times, the object is going to to something*/
@@ -92,7 +92,7 @@ h1 {
     /*this is what will happen over the course of the animation*/
     0%, 100% { 
         transform: translateY(0px);
-        background-image: url("../Space_station/images/favicon_Rob2.png");
+        background-image: url("./images/favicon_Rob2.png");
     }
     /*half-way through the animation, do this*/
     50% {
