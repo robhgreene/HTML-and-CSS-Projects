@@ -1,17 +1,40 @@
 #gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 5vw);
+    background-color: blueviolet;
+    
 }
 
 .container {
-
+    background-color: aqua;
 }
 
 .flex-container {
+    display: flex;
+    background-color: brown;
+    flex-wrap: wrap;
+    align-content: space-between;
+    column-count: 2;
 
 }
 
 .photo-container {
+    background-color: green;
+}
 
+.photo {
+    background-color: red;
+}
+
+.photo-overlay {
+    background-color: orange;
+}
+
+.white-head {
+    background-color: white;
+}
+
+img {
+    justify-self: center;
+    width: 300px;
+    height: 200px;
+    object-fit: scale-down;
 }
