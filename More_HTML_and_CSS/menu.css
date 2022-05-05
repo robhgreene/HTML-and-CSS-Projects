@@ -1,0 +1,74 @@
+body {
+    background: #184352;
+}
+
+.wrap {
+    top: 0; /*top and left 0 will seat it in the top left corner*/
+    left: 0;
+    height: auto; /*however tall the browser window is*/
+    width: 100%; /*fill 100% of the webpage width*/
+}
+
+.menu-container {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #184352;
+}
+
+.menu {
+    font: bold 12px/18px sans-serif;
+    text-align: center;
+    display: inline; /*elements will be on the same line*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*targets this list items in the menu*/
+.menu li {
+    color: #B3B3B3;
+    display: inline-block;
+    margin-right: -2px; /*makes the boxes more flush with eachother*/
+    position: relative;
+    padding: 12px 40px;
+    border: 1px solid #9D9FA2;
+    border-radius: 1.5px;
+    background-color: #387593;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: #5eafdf;
+    color: #fff
+}
+
+.menu li:hover ul {
+    display: block;
+    opacity: 1;
+    /*while hovered, drop down-menu appears. This also avoids a black-level bug*/
+    visibility: visible;
+}
+
+.submenu {
+    padding: 0;
+    left: 0;
+    position: absolute;
+    top: 43.5px;
+    width: 125.5px;
+    opacity: 0;
+    /*while hovered, drop down-menu appears. This also avoids a black-level bug*/
+    visibility: visible;
+}
+
+.submenu li {
+    background-color: #387593;
+    display: block;
+    color: #B3B3B3;
+}
+
+.submenu li:hover {
+    color: #fff;
+    background-color: #5eafdf;
+}
