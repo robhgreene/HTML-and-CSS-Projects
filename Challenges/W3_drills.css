@@ -1,0 +1,154 @@
+.center {
+    /* this is how to center an image
+    the image will not be centered if the width
+    is set to 100% */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /* this is an applied filter the image's 
+    colors will be displayed in negative */
+    filter: invert(100);
+    /* this will give the image rounded edges
+    the first value appplies the property to the 
+    top-left and bottom-right corners*, and second 
+    effects the top-right and bottom-left corners */
+    border-radius: 15px 50px;
+}
+
+table {
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid black;
+    /* give a double border effect inbetween the cells */
+    border-collapse: separate;
+}
+
+td, th {
+    border: 1px solid blue;
+    /* all the text will be indented to the left */
+    text-align: left;
+    padding: 8px;
+  }
+
+th {
+    background-color: blueviolet;
+}
+
+.container1 {
+    /* this is the container that holds the image and text 
+    the text will be centered */
+    position: relative;
+    text-align: center;
+    color: white;
+
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.navbar {
+    background-color: aqua;
+    position: fixed;
+    /* the nav bar will be at the top of the page */
+    top: 0;
+}
+
+.navbar a {
+    /* this will affect the navbar link text */
+    display: inline;
+    color: black;
+}
+
+.navbar a:hover {
+    /* this will create a hover effect */
+    background: #ddd;
+    color: crimson;
+}
+
+.column1 {
+    /* column will float to the left */
+    float: left;
+    width: 50%;
+    background-color: gray;
+    color: deepskyblue;
+    height: 200px;
+    width: 50%;
+}
+
+.column2 {
+    /* column will float to the left */
+    float: left;
+    width: 50%;
+    background-color: bisque;
+    color: green;
+    height: 150px;
+    width: 50%;
+}
+
+.row:after {
+    /* this will clear the float left for the next elements */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p {
+    color: chocolate;
+}
+
+p:hover {
+    color: black;
+}
+
+.container2 {
+    position: relative;
+    width:192px;
+}
+
+.container2:hover .overlay {
+    opacity: 1;
+}
+
+.image {
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 192px;
+    opacity: 0;
+    transition: .5s ease;
+  }
+
+  .text {
+    color: palevioletred;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  footer {
+      text-align: center;
+      font-weight: bold;
+  }
