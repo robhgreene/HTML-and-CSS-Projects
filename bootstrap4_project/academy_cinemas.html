@@ -13,33 +13,162 @@
   <body>
 
     <div class="container"> 
+    <div id="home">
+      <nav class="navbar navbar-expand-lg navbar-light bg-info">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-light" href="#home">About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-light" href="#showtime">Showtimes</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-light" href="#deals">Deals</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-primary my-2 my-sm-0 text-light" type="submit">Search</button>
+            </form>
+          </div>
+      </nav>
+    </div>
+        
+      <div class="jumbotron jumbotron-fluid bg-info text-center">
+          <div class="container">
+            <h1 class="display-4 text-light">Academy Cinemas</h1>
+            <p class="lead text-light">Sit, back, relax, and enjoy the show...</p>
+          </div>
+      </div>
+          
+      <div class="container">
+        <div class="row">
+          <!--1st Column-->
+          <div class="col-sm">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link text-light" href="#">About</a>
+            <img class="img-fluid" src="./Img/portland_1.jpg" alt="Picture of Portland"/>
+
+          </div>
+          <!--2nd Column-->
+          <div class="col-sm">
+
+            <h3>Accomidations:</h3>
+            <p>Here in the city of Portland, our reels have been spinning since 1959.</p>
+            <p>Showing our guests a great time!</p>
+            
+          </div>
+          <!--3rd Column-->
+          <div class="col-sm">
+
+            <h3>Now Playing:</h3>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a class="nav-link" href="#">Monty Python and the Holy Grail</a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link text-light" href="#">Showtimes</a>
+                <li class="list-group-item">
+                  <a class="nav-link" href="#">Kingdom of Heaven</a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link text-light" href="#">Deals</a>
+                <li class="list-group-item">
+                  <a class="nav-link" href="#">V for Vendetta</a>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-primary my-2 my-sm-0 text-light" type="submit">Search</button>
-              </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- showtimes -->
+      <div id="showtime">
+        <div class="container">
+          <h3>Showtimes:</h3>
+
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="./Img/movie_1.jpg" alt="Monty Python">
+              <div class="card-body">
+                <h5 class="card-title">Monty Python and the Holy Grail</h5>
+                <p class="card-text">King Arthur and his Knights of the Round Table embark on a surreal, low-budget search for the Holy Grail, encountering many, very silly obstacles.
+                </p> <br>
+                <span class="badge badge-pill badge info badge-primary">12:00pm</span>
+                <span class="badge badge-pill badge info badge-primary">1:30pm</span>
+                <span class="badge badge-pill badge info badge-primary">3:00pm</span>
+                <span class="badge badge-pill badge info badge-primary">5:30pm</span>
+                <span class="badge badge-pill badge info badge-primary">7:00pm</span>
+                <span class="badge badge-pill badge info badge-primary">9:30pm</span>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
             </div>
-        </nav>
-        
-        <div class="jumbotron jumbotron-fluid bg-info text-center">
-            <div class="container">
-              <h1 class="display-4 text-light">Academy Cinemas</h1>
-              <p class="lead text-light">Sit, back, relax, and enjoy the show...</p>
+            <div class="card">
+              <img class="card-img-top img-fluid" src="./Img/movie_2.jpg" alt="Kingdom of Heaven">
+              <div class="card-body">
+                <h5 class="card-title">Kingdom of Heaven</h5>
+                <p class="card-text">Balian of Ibelin travels to Jerusalem during the Crusades of the 12th century, and there he finds himself as the defender of the city and its people.
+                </p> <br>
+                <span class="badge badge-pill badge info badge-primary">12:00pm</span>
+                <span class="badge badge-pill badge info badge-primary">1:30pm</span>
+                <span class="badge badge-pill badge info badge-primary">3:00pm</span>
+                <span class="badge badge-pill badge info badge-primary">5:30pm</span>
+                <span class="badge badge-pill badge info badge-primary">7:00pm</span>
+                <span class="badge badge-pill badge info badge-primary">9:30pm</span>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
             </div>
-          </div>  
+            <div class="card">
+              <img class="card-img-top img-fluid" src="./Img/movie_3.jpeg" alt="V for Vendetta">
+              <div class="card-body">
+                <h5 class="card-title">V for Vendetta</h5>
+                <p class="card-text">In a future British dystopian society, a shadowy freedom fighter, known only by the alias of "V", plots to overthrow the tyrannical government - with the help of a young woman.
+                </p> <br>
+                <span class="badge badge-pill badge info badge-primary">12:00pm</span>
+                <span class="badge badge-pill badge info badge-primary">1:30pm</span>
+                <span class="badge badge-pill badge info badge-primary">3:00pm</span>
+                <span class="badge badge-pill badge info badge-primary">5:30pm</span>
+                <span class="badge badge-pill badge info badge-primary">7:00pm</span>
+                <span class="badge badge-pill badge info badge-primary">9:30pm</span>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      <!-- /showtimes -->
+      <div id="deals">
+        <div class="text-center">
+          <form>
+            <h1 class="text-primary my-5">Sign up for movie rewards</h1>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="container my-5">
+        <ul class="nav nav-inline">
+          <li class="nav-item">
+            <small><a class="nav-link active" href="#">Movie Rewards</a></small>
+          </li>
+          <li class="nav-item">
+            <small><a class="nav-link" href="#">Movie@news.org</a></small>
+          </li>
+          <li class="nav-item">
+            <small><a class="nav-link" href="#">Info@academycinemas.com</a></small>
+          </li>
+          <li class="nav-item">
+            <small><a class="nav-link">&copy;2019 Academy Cinemas&reg;</small>
+          </li>
+        </ul>
+      </div>
 
     </div>
 
